@@ -1,10 +1,12 @@
 package guru.springframework.repositories;
 
 import guru.springframework.domain.Product;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by jt on 1/10/17.
  */
-public interface ProductRepository extends CrudRepository<Product, Long> {
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }
